@@ -5,8 +5,6 @@ from config.docker_util import getDockerCommandLineExecutor,start_docker_contain
 from autogen_agentchat.messages import TextMessage
 
 
-
-
 async def main():
 
     openai_model_client = get_model_client()
@@ -15,7 +13,7 @@ async def main():
     team = getDataAnalyzerTeam(docker,openai_model_client)
 
     try:
-        task = 'Can you give me a graph of survived and died in my data titanic.csv'
+        task = 'Can you give me a graph of types of flowers in my data iris.csv'
 
         await start_docker_container(docker)
 
