@@ -11,3 +11,7 @@ langchain
 docker
 autogen-ext[docker]
 streamlit
+autogen-ext[mcp]
+flask
+pyngrok
+flask_cors
